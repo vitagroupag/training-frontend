@@ -1,0 +1,22 @@
+{
+  "name": "training-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -p 8080 --cors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitagroupag/training-frontend.git"
+  },
+  "author": "Maximilian Eise",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitagroupag/training-frontend/issues"
+  },
+  "homepage": "https://github.com/vitagroupag/training-frontend#readme",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
