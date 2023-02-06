@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "http-server -p 8080 --cors"
+    "start": "http-server -p 8080 -g --cors ."
   },
   "repository": {
     "type": "git",
