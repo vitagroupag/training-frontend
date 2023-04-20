@@ -5,6 +5,11 @@ tasks:
   - init: npm install && npm install -g eslint
     command: npm run start
 
+vscode:
+  extensions:
+    - tornadoalert.medblocks-ui
+    - rangav.vscode-thunder-client
+
 ports:
   - name: Medblocks UI
     description: The Training Frontend of Medblocks UI
