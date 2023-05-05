@@ -1,0 +1,40 @@
+{
+    "client": "Thunder Client",
+    "environmentName": "EHRbase local",
+    "dateExported": "2023-04-20T08:48:35.580Z",
+    "version": "1.0",
+    "variables": [
+        {
+            "name": "api_uri",
+            "value": "https://8080-vitagroupag-ehrbasework-7if98pqroyx.ws-eu94.gitpod.io/ehrbase/rest/openehr/v1"
+        },
+        {
+            "name": "admin_api_uri",
+            "value": "http://localhost:8080/ehrbase/rest/admin"
+        },
+        {
+            "name": "composition_id",
+            "value": ""
+        },
+        {
+            "name": "ehr_id",
+            "value": "a8fdcca8-a171-4be4-a5d6-f848bd763d39"
+        },
+        {
+            "name": "last_composition_id",
+            "value": ""
+        },
+        {
+            "name": "folder_id",
+            "value": ""
+        },
+        {
+            "name": "current_time",
+            "value": ""
+        },
+        {
+            "name": "ecis_api_uri",
+            "value": "http://localhost:8080/ehrbase/rest/ecis/v1"
+        }
+    ]
+}
