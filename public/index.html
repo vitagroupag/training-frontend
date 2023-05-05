@@ -35,34 +35,29 @@
 <mb-submit onclick='submit'><button>Form</button></mb-submit>
 
 <script>
-  var form = document.querySelector('mb-form')
-  form.cdr = axios.create({baseURL: "http://localhost:8080/ehrbase/rest/ecis/v1"})
-  form.template = "Koerpertemperatur"
-  form.ehr='01b252d3-5d42-459e-8aeb-5fb97a1c4a7e'
 
-const openehr = axios.create({baseURL:"http://localhost:8080/ehrbase/rest/ecis/v1",
+var form = document.querySelector('mb-form')
+
+const openehr = axios.create({baseURL:"https://8080-vitagroupag-ehrbasework-bprk1vlygjo.ws-eu96b.gitpod.io/ehrbase/rest/ecis/v1",
 headers: {
     Accept: "application/json",
   }});
   
   form.addEventListener('mb-submit', (e=CustomEvent)=>{
     
-      var templateId ='Koerpertemperatur'
-      var ehrId='01b252d3-5d42-459e-8aeb-5fb97a1c4a7e'
       var composition = e.detail
       e.submit
       var document = form.document;
       openehr.post("/composition", composition, {
-          params: { format: "FLAT", templateId: "Koerpertemperatur", ehrId: '31b5b6d0-65d8-48ba-85f2-63bd25a1b5f5'},
-      })
-    
-   // alert(e.detail)
-   // form.handleSubmit()
-  })
-
+          params: { format: "FLAT", templateId: "Koerpertemperatur", ehrId: '54fc1adc-6d3e-4e54-9bce-bd780d17213e'},
+      }).then(response => {
+      alert(response.status);
+  }).catch(error => {
+      console.error(error);
+  });
+});
+   
 </script>
-
 </mb-form>  
-
 </body>
 </html>
